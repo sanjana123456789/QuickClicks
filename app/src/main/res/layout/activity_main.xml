@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#a643fc"
+    tools:context="com.cetpa.quickclicks.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="google apps"
+        android:onClick="mgoogle"
+        android:id="@+id/button3"
+        android:layout_above="@+id/button5"
+        android:layout_marginBottom="87dp"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignEnd="@+id/button5"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignStart="@+id/button5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="social apps"
+        android:id="@+id/button4"
+        android:onClick="msocialapps"
+        android:layout_marginTop="89dp"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telephone app"
+        android:id="@+id/button5"
+        android:onClick="mtelephoneapps"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start browser"
+        android:onClick="sb"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
